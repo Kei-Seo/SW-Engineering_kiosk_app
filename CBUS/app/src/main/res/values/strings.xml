@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">LocationTracking</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="msg_token_fmt">token</string>
-</resources>
