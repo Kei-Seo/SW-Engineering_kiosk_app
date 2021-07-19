@@ -1,15 +1,12 @@
 package com.example.usingawswithkotlin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
-import android.widget.Toolbar
-import androidx.databinding.DataBindingUtil
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.usingawswithkotlin.databinding.ActivityMainBinding
-import java.util.Observer
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_note.*
 
@@ -35,10 +32,10 @@ class MainActivity : AppCompatActivity() {
              binding.invalidateAll()*/
         //모든 바인딩을 표현은 무효화하고, 새로운 바인딩 UI 요청을 시도합니다.
     }
-    private fun setupRecyclerView(recyclerView: RecyclerView){
+    private fun setupRecyclerView(recyclerView: RecyclerView) {
 
-        UserData.notes().observe(this, androidx.lifecycle.Observer {
-            notes->
+        // update individual cell when the Note data are modified
+        UserData.notes().observe(this, Observer<MutableList<UserData.Note>> { notes ->
             Log.d(TAG, "Note observer received ${notes.size} notes")
 
             // let's create a RecyclerViewAdapter that manages the individual cells
