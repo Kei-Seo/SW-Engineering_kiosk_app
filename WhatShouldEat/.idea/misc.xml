@@ -4,13 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1953125" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1953125" />
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1953125" />
-        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/activity_main.xml" value="0.6666666666666666" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/drawable/radius.xml" value="0.1953125" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/activity_ingredient.xml" value="0.12001811594202899" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/fragment_cook.xml" value="0.14447463768115942" />
-        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/fragment_home.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/fragment_mypage.xml" value="0.14447463768115942" />
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/layout/fragment_selection.xml" value="0.1068840579710145" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/menu/bnv_tab_item_foreground.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17916666666666667" />
+        <entry key="..\:/Users/ghdtj/Android/WhatShouldEat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

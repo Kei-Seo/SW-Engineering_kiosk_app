@@ -2,22 +2,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.whatshouldeat">
 
+
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+    </uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
+    </uses-permission>
+
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WhatShouldEat">
+        android:theme="@style/Theme.WhatShouldEat"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".IngredientActivity"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data android:name="com.kakao.sdk.AppKey"
+                android:value="b9f32fef0271607ea888557f4e2abefc"/>
         </activity>
+
     </application>
 
 </manifest>

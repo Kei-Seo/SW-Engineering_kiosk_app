@@ -1,12 +1,22 @@
 package com.example.whatshouldeat
 
+import android.content.Intent
+import android.content.pm.PackageInfo
+import android.content.pm.PackageManager
+import android.content.pm.Signature
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Base64
 import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import android.widget.Button
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_home.*
+
+import java.security.MessageDigest
+import java.security.NoSuchAlgorithmException
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,6 +37,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        val mapView = net.daum.mf.map.api.MapView(this)
+//        val mapViewContainer = map_view
+//        mapViewContainer.addView(mapView)
+
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+
         Log.d(TAG, "MainActivity - OnCreate() called!")
 
         bottom_nav.setOnNavigationItemSelectedListener(onBottomNavItemSelectedListener)
@@ -34,7 +50,17 @@ class MainActivity : AppCompatActivity() {
         homeFragment = HomeFragment.newInstance()
         supportFragmentManager.beginTransaction().add(R.id.fragments_frame, homeFragment).commit()
         // 초기화면에는 home fragment 가 나오도록 add
+
+
+        //메인 화면에서 다음 재료추가 화면으로 이동동
+       btn_ingredient.setOnClickListener {
+            val nextIntent = Intent(this, IngredientActivity::class.java)
+            startActivity(nextIntent)
+        }
+
+
     }
+
 
 
 

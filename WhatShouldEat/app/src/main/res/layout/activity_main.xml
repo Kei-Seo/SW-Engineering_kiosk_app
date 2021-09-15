@@ -4,19 +4,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius"
+        android:text="제료 추가"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
-        app:menu="@menu/bottom_nav_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#54F45625"
-
-        />
+        android:background="#95A0DBF4"
+        app:itemIconTint="@color/bnv_tab_item_foreground"
+        app:itemTextColor="@color/bnv_tab_item_foreground"
+        app:menu="@menu/bottom_nav_menu" />
 
 
     <FrameLayout
@@ -25,8 +41,8 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_nav"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        
-        />
+        android:layout_centerHorizontal="true" />
+
+
 
 </RelativeLayout>
