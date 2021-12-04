@@ -6,4 +6,227 @@
     android:layout_height="match_parent"
     tools:context=".alone.Transfer.AloneTransferOnsiteActivity">
 
+<<<<<<< Updated upstream
+=======
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/alone_transfer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:onClick="clickHandler"
+            android:scaleType="fitCenter"
+            android:src="@drawable/r" />
+
+        <ImageButton
+            android:id="@+id/alone_transfer_2"
+            android:src="@drawable/s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:onClick="clickHandler"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_3"
+            android:src="@drawable/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:onClick="clickHandler"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_4"
+            android:src="@drawable/f"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_5"
+            android:src="@drawable/a"
+            android:layout_width="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_6"
+            android:src="@drawable/q"
+            android:onClick="clickHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_7"
+            android:src="@drawable/t"
+            android:layout_width="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <ImageButton
+            android:backgroundTint="@color/white"
+            android:id="@+id/alone_transfer_8"
+            android:src="@drawable/d"
+            android:onClick="clickHandler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/alone_transfer_9"
+            android:src="@drawable/w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickHandler"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_10"
+            android:src="@drawable/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickHandler"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_11"
+            android:src="@drawable/z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:onClick="clickHandler"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_12"
+            android:src="@drawable/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_13"
+            android:src="@drawable/v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+        <ImageButton
+            android:id="@+id/alone_transfer_14"
+            android:src="@drawable/g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickHandler"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:weightSum="15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        <TextView
+            android:layout_marginTop="17dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:text="원하시는 목적지를 선택해 주세요"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <FrameLayout
+            android:layout_margin="20dp"
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_weight="14"
+            android:backgroundTint="@color/white">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>
