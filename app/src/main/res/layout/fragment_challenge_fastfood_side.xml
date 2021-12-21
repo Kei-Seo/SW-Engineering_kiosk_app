@@ -7,60 +7,217 @@
     android:layout_height="match_parent">
 
 
-    <ImageButton
-        android:id="@+id/FF_side_item1"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="104dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-
-        android:src="@drawable/cheeseball"
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="2">
 
-    <ImageButton
-        android:id="@+id/FF_side_item2"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/cheesestick"
+        <ImageButton
+            android:id="@+id/FF_side_item1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="60dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/cheeseball"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_marginStart="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="치즈볼 4개"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6200원"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageButton
-        android:id="@+id/FF_side_item3"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/seasoning"
+
+        <ImageButton
+            android:id="@+id/FF_side_item2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cheesestick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="44dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="치즈스틱"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5800원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FF_side_item1"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintTop_toBottomOf="@+id/alone_ff_linear_1"
+        app:layout_constraintVertical_bias="0.13">
 
-    <ImageButton
-        android:id="@+id/FF_side_item4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginEnd="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/potato"
+
+        <ImageButton
+            android:id="@+id/FF_side_item3"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/seasoning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FF_side_item1"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="44dp"
+            android:layout_weight="2"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="양념감자"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2000원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FF_side_item2"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintTop_toBottomOf="@+id/alone_ff_linear_2"
+        app:layout_constraintVertical_bias="0.13" >
+
+
+        <ImageButton
+            android:id="@+id/FF_side_item4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/potato"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FF_side_item2"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="2"
+            android:layout_marginEnd="44dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="감자튀김"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1800원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
