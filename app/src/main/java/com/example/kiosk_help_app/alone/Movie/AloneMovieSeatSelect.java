@@ -31,7 +31,7 @@ public class AloneMovieSeatSelect extends Activity {
         setContentView(R.layout.activity_alone_movie_seat_select);
         Intent intent = new Intent(this, AloneMovieSeatCheckAndPay.class);
 
-
+        //rest today
         TextView ticketText = findViewById(R.id.alone_movie_ticket_number);
         TextView priceText = findViewById(R.id.alone_movie_price);
 
