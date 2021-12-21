@@ -6,61 +6,222 @@
     android:background="#FFFFFF"
     android:layout_height="match_parent">
 
-
-    <ImageButton
-        android:id="@+id/FF_drink_item1"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="104dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-
-        android:src="@drawable/softice"
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="2">
 
-    <ImageButton
-        android:id="@+id/FF_drink_item2"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/sunday"
+        <ImageButton
+            android:id="@+id/FF_drink_item1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="104dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/softice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_marginStart="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="불고기버거 세트"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6200원"
+                android:gravity="center"
+                android:layout_weight="1">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageButton
-        android:id="@+id/FF_drink_item3"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/coke"
+
+        <ImageButton
+            android:id="@+id/FF_drink_item2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sunday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="44dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="치즈버거세트"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5800원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FF_drink_item1"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintTop_toBottomOf="@+id/alone_ff_linear_1"
+        app:layout_constraintVertical_bias="0.13">
 
-    <ImageButton
-        android:id="@+id/FF_drink_item4"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginEnd="44dp"
-        android:adjustViewBounds="true"
-        android:backgroundTint="@color/white"
-        android:scaleType="fitCenter"
-        android:src="@drawable/sidar"
+
+        <ImageButton
+            android:id="@+id/FF_drink_item3"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/coke"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FF_drink_item1"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="44dp"
+            android:layout_weight="2"
+
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="크리스피버거"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7000원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/alone_ff_linear_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FF_drink_item2"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintTop_toBottomOf="@+id/alone_ff_linear_2"
+        app:layout_constraintVertical_bias="0.13" >
+
+
+
+        <ImageButton
+            android:id="@+id/FF_drink_item4"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginEnd="44dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sidar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FF_drink_item2"
+            app:layout_constraintVertical_bias="0.13" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="2"
+            android:layout_marginEnd="44dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="치킨치즈버거"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6000원"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
