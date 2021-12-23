@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kiosk_help_app">
         <activity
+            android:name=".alone.Movie.AloneMovieSelectAllScreen"
+            android:exported="true" />
+        <activity
             android:name=".copying.Movie.MovieReservationInfoActivity"
             android:exported="false" />
         <activity
